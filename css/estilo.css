@@ -108,7 +108,7 @@ body{
 #sobre{
     width: 100%;
     height: fit-content;
-    background-color: black;
+    background-color: blue;
     display: flex;
     justify-content: center;
 }
