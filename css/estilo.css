@@ -2,12 +2,7 @@
 
 
 .quadradoteste{
-    width: 100%;
-    height: 300px;
     background-color: #111010;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
