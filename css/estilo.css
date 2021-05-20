@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding:  0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+/* INICIAL START */
+
+#inicio{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/joaozinho.jpg');
+    background-size: cover;
+}
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+#barra-navegacao{
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hamburguer{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    display: block;
+}
+
+#menuhamburguer{
+    display: none;
+}
+
+#menu{
+    display: flex;
+    gap: 16px;
+}
+
+.item-menu{
+    list-style: none;
+}
+
+.link-menu{
+    text-decoration: none;
+    color: white;
+}
+
+#apresentacao{
+    width: 100%;
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+#botao-apresentacao{
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+#texto-apresentacao{
+    font-size: 3em;
+}
+
+/* INICIAL END */
+
+
+/* SOBRE START */
+#sobre{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.titulosecao{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1.5em;
+}
+
+#imgsobre{
+    width: 400px;
+}
+
+#sobrearea{
+    margin: 32px 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 64px;
+}
+
+.texto-informacoes{
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.linha-sobre{
+    padding-top: 15px;
+    display: flex;
+    gap: 16px;
+}
+
+.coluna-sobre{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    width: 32px;
+}
+/* SOBRE END */
+
+/* RESUMO START */
+#resumo{
+    width: 100%;
+    height: fit-content;
+    margin: 32px 0;
+}
+
+.linha-resumo{
+    padding-top: 40px;
+    display: flex;
+    gap: 16px;
+}
+
+.col-resumo{
+    background-color: #111010;
+    width: 100%;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 1.3em;
+}
+
+.item-resumo{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.titulo-resumo{
+    text-align: center;
+}
+/* RESUMO END */
+
+
+@media (max-width: 768px) {
+
+    /* INICIAL START */
+    #inicio{
+        background-position: -230px 0;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    #texto-apresentacao{
+        font-size: 1.5em;
+    }
+
+    #botao-apresentacao{
+        font-size: 0.8em;
+    }
+    /* INICIAL END */
+
+    /* SOBRE START */
+    #sobrearea{
+        gap: 2em;
+    }
+
+    #imgsobre{
+        width: 320px;
+    }
+
+    .texto-informacoes{
+        font-size: 1em;
+    }
+    /* SOBRE END */
+
+    /* RESUMO START */
+    .col-resumo{
+        padding: 20px;
+    }
+    /* RESUMO END */
+
+}
+
+@media (max-width: 600px) {
+
+    /* INICIAL START */
+    #logo{
+        font-size: 1.5rem;
+    }
+
+    #inicio{
+        background-position: -265px 0;
+    }
+
+    #menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        right: 0px;
+        z-index: 20;
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        visibility: hidden;
+        transition: 0.5s;
+        overflow-y: hidden;
+    }
+
+    #navegacao.triggerMenu #menu{
+        height: 180px;
+        visibility: visible;
+    }
+
+    #menu li{
+        text-align: center;
+    }
+    #menuhamburguer{
+        display: block;
+    }
+
+    #texto-apresentacao{
+        font-size: 1.2em;
+    }
+
+    #botao-apresentacao{
+        font-size: 0.5em;
+        padding: 10px 30px;
+    }
+    /* INICIAL END */
+
+    /* SOBRE START */
+    #sobrearea{
+        flex-direction: column;
+    }
+    /* SOBRE END */
+
+    /* RESUMO START */
+    .linha-resumo{
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .col-resumo{
+        width: 85%;
+    }
+    /* RESUMO END */
+
+}
+
