@@ -369,6 +369,7 @@ footer h3{
         flex-direction: column;
         position: absolute;
         width: 100%;
+        padding-top: 16px;
         top: 50px;
         right: 0px;
         z-index: 20;
