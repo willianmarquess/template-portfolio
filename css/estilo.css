@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-
-.quadradoteste{
-    width: 100%;
-    height: 300px;
-    background-color: pink;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 *{
     margin: 0;
     padding:  0;
@@ -108,7 +97,7 @@ body{
 #sobre{
     width: 100%;
     height: fit-content;
-    background-color: blue;
+    background-color: black;
     display: flex;
     justify-content: center;
 }
@@ -183,11 +172,144 @@ body{
     text-align: justify;
 }
 
+.item-resumo h5{
+    font-weight: normal;
+}
+
 .titulo-resumo{
     text-align: center;
 }
 /* RESUMO END */
 
+/* PROJETO START */
+#projetos{
+    height: fit-content;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+}
+
+.linha-projetos{
+    margin-top: 40px;
+    padding: 45px 0px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    background-color: #111010;
+    border-radius: 15px;
+}
+
+.linha-projetos img{
+    width: 30%;
+}
+/* PROJETO END */
+
+/* CONTATO START */
+#contato{
+    height: fit-content;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+}
+
+.form-contato{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.linha-contato{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    gap: 16px;
+}
+
+.input-contato{
+    width: calc(100% - 8px);
+    height: 2em;
+    border: 1px solid #959090;
+    background-color: #111010;
+    color: #959090;
+    padding-left: 8px;
+    font-size: 1em;
+}
+
+#textarea-contato{
+    resize: none;
+    width: calc(100% - 8px);
+    height: 250px;
+    border: 1px solid #959090;
+    background-color: #111010;
+    padding-left: 8px;
+    padding-top: 8px;
+    color: #959090;
+    font-size: 1em;
+}
+
+#botao-contato{
+    width: 100px;
+    height: 40px;
+    border: 1px solid white;
+    background-color: #111010;
+    color: white;
+    cursor: pointer;
+}
+/* CONTATO END */
+
+/* RODAPE START */
+#rodape{
+    height: fit-content;
+    width: 100%;
+    background-color: black;
+    margin-top: 32px;
+}
+
+.area-icones-rodape{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.item-footer{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #111010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+    border: solid 1px white;
+}
+
+.item-footer img{
+    width: 50px;
+}
+
+footer{
+    width: 100%;
+    height: 64px;
+    background-color: #111010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3{
+    font-size: 16px;
+}
+/* RODAPE END */
 
 @media (max-width: 768px) {
 
@@ -297,5 +419,42 @@ body{
     }
     /* RESUMO END */
 
+    /* PROJETO START */
+    .linha-projetos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linha-projetos img{
+        width: 80%;
+    }
+    /* PROJETO END */
+
+    /* CONTATO START */
+    .linha-contato{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    #botao-contato{
+        width: 100%;
+    }
+    /* CONTATO END */
+
+    /* FOOTER START */
+    .item-footer{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .item-footer img{
+        width: 40px;
+    }
+
+    footer h3{
+        font-size: 12px;
+    }
+    /* FOOTER END */
 }
 
